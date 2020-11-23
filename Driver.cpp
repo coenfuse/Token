@@ -73,4 +73,7 @@ int main()
     std::cout << "\n";
     for (auto each : L)
         std::cout << test.checkLog(each) << std::endl;
+
+    std::cout << "\nPress Enter to exit." << std::endl;
+    std::cin.get();
 }
