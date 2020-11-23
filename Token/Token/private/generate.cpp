@@ -17,7 +17,7 @@ std::string Token::get_string(TOKEN_TYPE type) {
 	{
 	case Token::TOKEN_TYPE::OTP: {
 		for (int i = 0; i < OTP_length; i++) {
-			generated_string += pool[rand() % pool.length()];
+			generated_string += num_pool[rand() % num_pool.length()];
 		}
 		return generated_string;
 	}
