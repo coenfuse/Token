@@ -147,6 +147,7 @@
     <ClCompile Include="Token\Token\public\giveLog.cpp" />
     <ClCompile Include="Token\Token\public\giveOTP.cpp" />
     <ClCompile Include="Token\Token\public\giveSession.cpp" />
+    <ClCompile Include="Token\Token\public\Token.cpp" />
     <ClCompile Include="Token\Token\public\vacate.cpp" />
   </ItemGroup>
   <ItemGroup>

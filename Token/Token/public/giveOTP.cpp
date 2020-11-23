@@ -1,11 +1,13 @@
 #include "..\..\Token.h"
 
 std::string Token::giveOTP() {
-	std::string new_string = get_string(Token::TOKEN_TYPE::OTP);
+	std::string new_OTP = get_string(Token::TOKEN_TYPE::OTP);
 	while (true) {
-		if (OTP_codes.count(new_string) == 0)
-			return new_string;
+		if (OTP_codes.count(new_OTP) == 0) {
+			OTP_codes.insert(new_OTP);
+			return new_OTP;
+		}
 		else
-			new_string = get_string(Token::TOKEN_TYPE::OTP);
+			new_OTP = get_string(Token::TOKEN_TYPE::OTP);
 	}
 }

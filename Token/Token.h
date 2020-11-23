@@ -1,9 +1,6 @@
 #include <string>
 #include <set>
 
-// Initializing this container here reduces the size of Token object from 48 to 1.
-//static std::set<std::string> session_codes, access_codes, OTP_codes, log_codes;
-
 class Token {
 private:
 	// Enumerated types of string created by Token class
@@ -11,7 +8,7 @@ private:
 		OTP,SESSION,ACCESS,LOG
 	};
 	// Containers for each type of string
-	std::set<std::string> session_codes, access_codes, OTP_codes, log_codes;
+	static std::set<std::string> session_codes, access_codes, OTP_codes, log_codes;
 	// Generated a random string of given type.
 	std::string get_string(TOKEN_TYPE);
 public:
