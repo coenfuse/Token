@@ -25,14 +25,14 @@ public:
 	std::string giveLog();
 
 	// Check if input access code has been generated before.
-	bool checkAccess(std::string);
+	bool checkAccess(const std::string&);
 	// Check if input session code has been generated before.
-	bool checkSession(std::string);
+	bool checkSession(const std::string&);
 	// Check if input OTP has been generated before.
-	bool checkOTP(std::string);
+	bool checkOTP(const std::string&);
 	// Check if input Log code has been generated before.
-	bool checkLog(std::string);
+	bool checkLog(const std::string&);
 
 	// Removes the input string from the set (if found)
-	void vacate(std::string);
+	void vacate(const std::string&);
 };

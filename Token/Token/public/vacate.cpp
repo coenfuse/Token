@@ -4,7 +4,7 @@
 #define ACCESS 64
 #define SESSION 10
 
-void Token::vacate(std::string input) {
+void Token::vacate(const std::string& input) {
 	unsigned short length = (unsigned short)input.length();
 	switch (length)
 	{
